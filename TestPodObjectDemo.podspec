@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "A short description of TestPodObjectDemo."
 
   s.homepage     = "https://github.com/xzt427/TestPod"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -52,7 +51,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "xzt427" => “1437765139@qq.com” }
+  s.author             = { "xzt427" => "1437765139@qq.com" }
   # Or just: s.author    = "xzt427"
   # s.authors            = { "xzt427" => "" }
   # s.social_media_url   = "http://twitter.com/xzt427"
@@ -79,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xzt427/TestPod.git", :tag => “0.01” }
+  s.source       = { :git => "https://github.com/xzt427/TestPod.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TestPodObjectC", "TestPodObjectC/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "TestPodObjectC/TestPodObjectC/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -116,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
